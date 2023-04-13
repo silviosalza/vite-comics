@@ -6,9 +6,16 @@ export default {
 </script>
 
 <template>
+    <section class="content">
+
+    </section>
   
 </template>
 
-<style>
+<style scoped lang="scss">
+.content{
+    height: 150px;
+    background-color: black;
+}
 
 </style>

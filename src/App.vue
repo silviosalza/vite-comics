@@ -19,9 +19,14 @@ export default{
 
 <template>
   <headerDC/>
+  <contentDC/>
+  <subpages/>
+  <footerDC/>
+
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+
 
 
 </style>

@@ -83,7 +83,6 @@ export default {
 header{
     height: 150px;
     width: 100%;
-    background-color: gray;
     display: flex;
 .container{
     width: 1000px;
