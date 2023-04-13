@@ -11,17 +11,17 @@ export default{
     contentDC,
     subpages,
     footerDC,
-    footerSocial,
-    
+    footerSocial
   }
 }
 
 </script>
 
 <template>
-  
+  <headerDC/>
 </template>
 
-<style>
+<style scoped lang="scss">
+
 
 </style>
