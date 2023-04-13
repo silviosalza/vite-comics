@@ -58,8 +58,7 @@ export default {
     }
     li{
         font-size: 1rem;
-        list-style: none;
-        
+        list-style: none;  
     }
 }
 
