@@ -11,7 +11,7 @@ export default{
     contentDC,
     subpages,
     footerDC,
-    footerSocial
+    footerSocial,
   }
 }
 
