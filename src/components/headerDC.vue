@@ -107,7 +107,7 @@ header{
         color: black;
         font-weight: 700;
         &:hover{
-            color: blue;
+            color: #0282F9;
         }
     }
 }

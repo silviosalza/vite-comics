@@ -59,7 +59,7 @@ export default {
 
 <style scoped lang="scss">
 .subpages{
-    background-color: blue;
+    background-color: #0282F9;
     color: white;
     height: 150px;
     .container{
@@ -71,12 +71,12 @@ export default {
     }
 
     ul{
-        width: 100%;
         display: flex;
-        justify-content: space-between;
+        padding-left: 0;
 
         li{
             list-style: none;
+            padding: 0 2rem;
             a{
                 color: inherit;
                 text-decoration: none;
