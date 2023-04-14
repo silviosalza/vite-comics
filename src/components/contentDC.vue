@@ -1,21 +1,28 @@
 <script>
 export default {
-    name: "contentDC"
+    name: "contentDC",
 }
-
 </script>
 
 <template>
-    <section class="content">
+    <section class="jumbotron">
+        <img class="jumboimg" src="../assets/jumbotron.jpg" alt="">
+
 
     </section>
   
 </template>
 
 <style scoped lang="scss">
-.content{
-    height: 150px;
-    background-color: black;
+
+.jumbotron{
+    .jumboimg{
+        width: 100%;
+        height: 500px;
+        object-fit:cover;
+        object-position: 0rem 0rem;
+    }
+    
 }
 
 </style>
