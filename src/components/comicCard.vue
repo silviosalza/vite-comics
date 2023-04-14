@@ -11,20 +11,23 @@ export default{
 
 <template>
         <div class="card">
-            <img :src="img" alt="">
-            <h3>{{name}}</h3>
+            <img class="frontpage" :src="img" alt="">
+            <h4>{{name}}</h4>
         </div>
 </template>
 
 
 
 <style>
-.row{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
+.card{
+    width: calc(100%/6);
+    padding: 1rem 0;
 }
 
+.frontpage{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
 
+}
 </style>

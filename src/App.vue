@@ -101,23 +101,23 @@ export default{
 <template>
   <headerDC/>
   <contentDC/>
-  <div class="row">
-    <comicCard v-for="(element,index) in comic" :key="index" :img="element.thumb" :name="element.series"/>
-  </div>
+    <div class="row">
+        <comicCard v-for="(element,index) in comic" :key="index" :img="element.thumb" :name="element.series"/>
+    </div>
   <subpages/>
   <footerDC/>
 
 </template>
 
 <style lang="scss">
+
+
 .row{
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
-
-
-
-
 </style>

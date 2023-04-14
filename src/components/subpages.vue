@@ -50,7 +50,7 @@ export default {
         <div class="container">
             <ul>
                 <li v-for="(element,index) in subpage" :key="index">
-                    <img :src= ImgPath() alt=""/><a href="">{{ element.text.toUpperCase() }}</a>
+                    <a href="">{{ element.text.toUpperCase() }}</a>
                 </li>
             </ul>
         </div>

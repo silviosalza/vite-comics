@@ -84,6 +84,7 @@ header{
     height: 150px;
     width: 100%;
     border-top: 20px solid black;
+    background-color: white;
     
 .container{
     width: 1500px;
