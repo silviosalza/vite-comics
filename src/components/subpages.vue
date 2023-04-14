@@ -7,31 +7,39 @@ export default {
                 {
                     text: "Digital Comics",
                     url: "#",
-                    img: '../assets/buy-comics-digital-comics.png'
+                    img: 'buy-comics-digital-comics.png'
                 },
                 {
                     text: "DC Merchandise",
                     url: "#",
-                    img: '../assets/buy-comics-merchandise.png'
+                    img: 'buy-comics-merchandise.png'
                 },
                 {
                     text: "Subscription",
                     url: "#",
-                    img: '../assets/buy-comics-subscriptions.png'
+                    img: 'buy-comics-subscriptions.png'
                 },
                 {
                     text: "Comic Shop Locator",
                     url: "#",
-                    img: '../assets/buy-comics-shop-locator.png'
+                    img: 'buy-comics-shop-locator.png'
                 },
                 {
                     text: "DC Power Visa",
                     url: "#",
-                    img: '../assets/buy-dc-power-visa.svg'
+                    img: 'buy-dc-power-visa.svg'
                 },
                 
             ]
         }
+    },
+    methods:{
+        ImgPath() {
+            const imageUrl = new URL(`../assets/${this.subpage.img}`, import.meta.url).href;
+            return imageUrl
+        }
+
+        
     }
 }
 
@@ -42,7 +50,7 @@ export default {
         <div class="container">
             <ul>
                 <li v-for="(element,index) in subpage" :key="index">
-                    <a href="">{{ element.text.toUpperCase() }}</a>
+                    <img :src= ImgPath() alt=""/><a href="">{{ element.text.toUpperCase() }}</a>
                 </li>
             </ul>
         </div>

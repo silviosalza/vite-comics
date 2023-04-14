@@ -17,7 +17,7 @@ export default {
     <section class="footerDC">
         <div class="container">
             <div class="footer-links">
-                <div>
+                <div class="list">
                     <h3>DC COMICS</h3>
                     <ul v-for="(element,index) in ComicLink">
                         <li>{{element}}</li>
@@ -27,13 +27,13 @@ export default {
                         <li>{{element}}</li>
                     </ul>
                 </div>
-                <div>
+                <div class="list">
                     <h3>DC</h3>
                     <ul v-for="(element,index) in DCLink">
                         <li>{{element}}</li>
                     </ul>
                 </div>
-                <div>
+                <div class="list">
                     <h3>SITES</h3>
                     <ul v-for="(element,index) in SitesLink">
                         <li>{{element}}</li>
@@ -47,6 +47,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.footerDC{
+    background-image: url(../assets/footer-bg.jpg);
+}
 .container{
     max-width: 1500px;
     margin: 0 auto;
@@ -54,17 +57,28 @@ export default {
 }
 .footer-links{
     display: flex;
+    .list{
+        padding: 0 1rem;
+    }
+    .list h3{
+        padding: 1.5rem 0;
+    }
+    h3{
+        color: white
+    }
     ul{
         padding-left: 0;
     }
     li{
         font-size: 1rem;
+        color: rgb(164, 164, 164);
         list-style: none;  
         padding-left: 0;
+        padding: 0.2rem 0;
     }
 }
 img{
-    width: 40%;
+    width: 30%;
 }
 
 </style>
