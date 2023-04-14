@@ -48,20 +48,23 @@ export default {
 
 <style scoped lang="scss">
 .container{
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
 }
 .footer-links{
     display: flex;
-    div{
+    ul{
+        padding-left: 0;
     }
     li{
         font-size: 1rem;
         list-style: none;  
+        padding-left: 0;
     }
 }
-
-
+img{
+    width: 40%;
+}
 
 </style>

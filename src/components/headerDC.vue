@@ -70,7 +70,7 @@ export default {
             <nav class="nav-bar">
                 <ul>
                     <li v-for="link in links" :class="link.current ? 'active' :''">
-                        <a href="link.url">{{ link.text }}</a>
+                        <a href="link.url">{{ link.text.toUpperCase() }}</a>
                     </li>
                 </ul>
             </nav>
@@ -83,24 +83,32 @@ export default {
 header{
     height: 150px;
     width: 100%;
-    display: flex;
+    border-top: 20px solid black;
+    
 .container{
-    width: 1000px;
+    width: 1500px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 
     ul{
         display: flex;
+        padding: 0;
     }
 
     li{
         list-style: none;
+        padding-right:  1rem;
     }
     a{
         text-decoration: none;
+        color: black;
+        font-weight: 700;
+        &:hover{
+            color: blue;
+        }
     }
 }
 

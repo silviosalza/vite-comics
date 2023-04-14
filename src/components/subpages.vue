@@ -41,8 +41,8 @@ export default {
     <section class="subpages">
         <div class="container">
             <ul>
-                <li v-for="element in subpage">
-                    <a href="">{{ element.text }}</a>
+                <li v-for="(element,index) in subpage" :key="index">
+                    <a href="">{{ element.text.toUpperCase() }}</a>
                 </li>
             </ul>
         </div>
@@ -55,7 +55,7 @@ export default {
     color: white;
     height: 150px;
     .container{
-        max-width: 1000px;
+        max-width: 1500px;
         height: 150px;
         margin: 0 auto; 
         display: flex;
